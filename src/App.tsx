@@ -1,88 +1,126 @@
 import "./App.css";
-import nftImage from "./Nuotraukos/NFT.png";
+import nftImage from "./Images/NFT.png";
+import hikingImage from "./Images/HIKING.png";
+import reactionGameImage from "./Images/ReactionGame.png";
+import guessWordImage from "./Images/GuessWord.png";
 
 function App() {
   return (
     <main className="container">
       <h1 className="page-title">My projects</h1>
-      <div className="project-grid">
-        <div className="project-card">
-          <img
-            src={nftImage}
-            alt="CSS-HTML Project"
-            className="project-image"
-          />
-          <h2 className="project-title">CSS and HTML projects</h2>
-          <div className="project-links">
-            <a
-              href="https://tavopavarde.github.io/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/tavopavarde/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              GitHub Repo
-            </a>
-          </div>
-        </div>
 
-        <div className="project-card">
-          <img src="images/todo.png" alt="ToDo App" className="project-image" />
-          <h2 className="project-title">ToDo Aplikacija</h2>
-          <div className="project-links">
-            <a
-              href="https://tavopavarde.github.io/todo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/tavopavarde/todo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              GitHub Repo
-            </a>
+      <section className="project-section">
+        <h2 className="section-title">HTML & CSS Projects</h2>
+        <div className="project-grid">
+          <div className="project-card">
+            <img
+              src={nftImage}
+              alt="CSS-HTML Project"
+              className="project-image"
+            />
+            <h3 className="project-title">NFT project</h3>
+            <div className="project-links">
+              <a
+                href="https://css-and-html-delta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/CSS-and-HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+          <div className="project-card">
+            <img
+              src={hikingImage}
+              alt="CSS-HTML Project"
+              className="project-image"
+            />
+            <h3 className="project-title">Hiking tour project</h3>
+            <div className="project-links">
+              <a
+                href="https://hiking-tour.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/HikingTour"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className="project-card">
-          <img
-            src="images/ui-demo.png"
-            alt="UI Demo"
-            className="project-image"
-          />
-          <h2 className="project-title">UI Demo</h2>
-          <div className="project-links">
-            <a
-              href="https://tavopavarde.github.io/ui-demo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/tavopavarde/ui-demo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              GitHub Repo
-            </a>
+      <section className="project-section">
+        <h2 className="section-title">JavaScript Projects</h2>
+        <div className="project-grid">
+          <div className="project-card">
+            <img
+              src={reactionGameImage}
+              alt="ToDo App"
+              className="project-image"
+            />
+            <h3 className="project-title">Reaction game</h3>
+            <div className="project-links">
+              <a
+                href="https://reaction-game-six.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/reaction-game"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src={guessWordImage} alt="UI Demo" className="project-image" />
+            <h3 className="project-title">Guess the word game</h3>
+            <div className="project-links">
+              <a
+                href="https://javascript-word-guesser.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/javascript-word-guesser"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
