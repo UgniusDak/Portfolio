@@ -10,112 +10,132 @@ body {
   min-height: 100vh;
 }
 
-/* Tamsus puslapio fonas su skaidrumu, kad tekstas geriau matytųsi */
+/* Tamsus fonas konteineriui su truputį mažesniu skaidrumu */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
 }
 
-/* Puslapio antraštė */
 .page-title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 900;
   text-align: center;
-  margin-bottom: 2rem;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
-
-/* Kiekvienas projektų sektorius */
-.project-section {
   margin-bottom: 3rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-family: "Poppins", sans-serif;
 }
 
-/* Sektoriaus pavadinimas */
+.project-section {
+  margin-bottom: 4rem;
+}
+
 .section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  border-bottom: 3px solid #1db954; /* maloni žalia linija */
-  padding-bottom: 0.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid #1db954;
+  padding-bottom: 0.7rem;
+  color: #fff; /* Pakeičiam į baltą */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  font-family: "Poppins", sans-serif;
+  max-width: fit-content;
+  text-align: center; /* Centrinis tekstas */
+  margin-left: auto; /* Kad veiktų centravimas */
+  margin-right: auto;
 }
 
-/* Projekto kortelių išdėstymas */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   justify-content: center;
 }
 
 .project-card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(58, 65, 61, 0.2),
+    rgba(29, 185, 84, 0.15)
+  );
+  border-radius: 16px;
   width: 320px;
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem 1.8rem 2rem 1.8rem;
+  box-shadow: 0 6px 18px rgba(29, 185, 84, 0.4),
+    inset 0 0 20px rgba(29, 185, 84, 0.2);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(29, 185, 84, 0.8);
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(29, 185, 84, 0.8),
+    inset 0 0 30px rgba(29, 185, 84, 0.4);
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 5px 20px rgba(29, 185, 84, 0.6);
+  transition: transform 0.3s ease;
 }
 
-/* Projekto pavadinimas */
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
 .project-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #1db954; /* ta pati žalia spalva */
-  text-align: center;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+  color: #fff; /* Baltos spalvos */
+  text-align: center; /* Centre */
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-family: "Poppins", sans-serif;
 }
 
-/* Nuorodų blokas */
 .project-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  width: 100%;
 }
 
-/* Nuorodų stilius */
 .project-link {
   background-color: #1db954;
   color: #fff;
-  padding: 0.5rem 1.3rem;
+  padding: 0.55rem 1.5rem;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.7);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 18px rgba(29, 185, 84, 0.85);
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  user-select: none;
+  text-align: center;
 }
 
 .project-link:hover {
   background-color: #17a44d;
-  box-shadow: 0 6px 20px rgba(23, 164, 77, 0.9);
+  box-shadow: 0 8px 25px rgba(23, 164, 77, 0.95);
 }
 
-/* Responsive smulkesniems ekranams */
 @media (max-width: 768px) {
   .project-grid {
     flex-direction: column;
     align-items: center;
   }
+
   .project-card {
     width: 90%;
   }
