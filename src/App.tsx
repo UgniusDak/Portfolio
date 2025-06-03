@@ -119,6 +119,28 @@ function App() {
               </a>
             </div>
           </div>
+          <div className="project-card">
+            <img src={guessWordImage} alt="UI Demo" className="project-image" />
+            <h3 className="project-title">2048 Game</h3>
+            <div className="project-links">
+              <a
+                href="https://2048-one-tau.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/2048"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
