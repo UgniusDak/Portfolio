@@ -3,6 +3,7 @@ import nftImage from "./Images/NFT.png";
 import hikingImage from "./Images/HIKING.png";
 import reactionGameImage from "./Images/ReactionGame.png";
 import guessWordImage from "./Images/GuessWord.png";
+import gameImage from "./Images/2048.png";
 
 function App() {
   return (
@@ -120,7 +121,7 @@ function App() {
             </div>
           </div>
           <div className="project-card">
-            <img src={guessWordImage} alt="UI Demo" className="project-image" />
+            <img src={gameImage} alt="UI Demo" className="project-image" />
             <h3 className="project-title">2048 Game</h3>
             <div className="project-links">
               <a

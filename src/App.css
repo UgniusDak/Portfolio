@@ -1,6 +1,7 @@
-/* Fonas su nuotrauka visam puslapiui */
+/* Bendri stiliai su fono nuotrauka */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("https://images.unsplash.com/photo-1687603917313-ccae1a289a9d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
@@ -10,126 +11,119 @@ body {
   min-height: 100vh;
 }
 
-/* Tamsus fonas konteineriui su truputį mažesniu skaidrumu */
+/* Konteineris visam turiniui su tamsiu skaidriu fonu */
 .container {
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 2.5rem 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 14px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
 }
 
+/* Puslapio pavadinimas */
 .page-title {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 3.2rem;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 3rem;
-  letter-spacing: 3px;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   font-family: "Poppins", sans-serif;
 }
 
-.project-section {
-  margin-bottom: 4rem;
-}
-
+/* Sekcijos pavadinimas */
 .section-title {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  border-bottom: 4px solid #1db954;
-  padding-bottom: 0.7rem;
-  color: #fff; /* Pakeičiam į baltą */
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  border-bottom: 3px solid #1db954;
+  padding-bottom: 0.5rem;
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  max-width: fit-content;
-  text-align: center; /* Centrinis tekstas */
-  margin-left: auto; /* Kad veiktų centravimas */
-  margin-right: auto;
+  color: #fff;
 }
 
+/* Projektų kortelių tinklelis */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: center;
 }
 
+/* Vienos projektų kortelės stilius */
 .project-card {
-  background: linear-gradient(
-    135deg,
-    rgba(58, 65, 61, 0.2),
-    rgba(29, 185, 84, 0.15)
-  );
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
-  width: 320px;
-  padding: 1.5rem 1.8rem 2rem 1.8rem;
-  box-shadow: 0 6px 18px rgba(29, 185, 84, 0.4),
-    inset 0 0 20px rgba(29, 185, 84, 0.2);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  cursor: default;
+  flex: 1 1 280px;
+  max-width: 320px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .project-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 12px 30px rgba(29, 185, 84, 0.8),
-    inset 0 0 30px rgba(29, 185, 84, 0.4);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(29, 185, 84, 0.6);
 }
 
+/* Projektų paveikslėlis */
 .project-image {
   width: 100%;
-  height: 210px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 1.4rem;
-  box-shadow: 0 5px 20px rgba(29, 185, 84, 0.6);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 
-.project-card:hover .project-image {
-  transform: scale(1.05);
-}
-
+/* Projekto pavadinimas */
 .project-title {
-  font-size: 1.7rem;
-  margin-bottom: 1.3rem;
-  color: #fff; /* Baltos spalvos */
-  text-align: center; /* Centre */
-  font-weight: 700;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   font-family: "Poppins", sans-serif;
 }
 
+/* Nuorodų mygtukų konteineris */
 .project-links {
   display: flex;
+  gap: 1rem;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
   width: 100%;
 }
 
+/* Mygtukai */
 .project-link {
   background-color: #1db954;
   color: #fff;
-  padding: 0.55rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.05rem;
-  box-shadow: 0 6px 18px rgba(29, 185, 84, 0.85);
-  transition: background-color 0.35s ease, box-shadow 0.35s ease;
-  user-select: none;
+  font-size: 1rem;
+  box-shadow: 0 5px 16px rgba(29, 185, 84, 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  flex: 1 1 auto;
+  min-width: 100px;
 }
 
 .project-link:hover {
   background-color: #17a44d;
-  box-shadow: 0 8px 25px rgba(23, 164, 77, 0.95);
+  box-shadow: 0 8px 24px rgba(23, 164, 77, 0.9);
 }
 
+/* Atsakymas į mažus ekranus */
 @media (max-width: 768px) {
   .project-grid {
     flex-direction: column;
@@ -138,5 +132,6 @@ body {
 
   .project-card {
     width: 90%;
+    max-width: none;
   }
 }
