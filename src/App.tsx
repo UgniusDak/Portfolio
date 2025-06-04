@@ -4,6 +4,7 @@ import hikingImage from "./Images/HIKING.png";
 import reactionGameImage from "./Images/ReactionGame.png";
 import guessWordImage from "./Images/GuessWord.png";
 import gameImage from "./Images/2048.png";
+import weddingImage from "./Images/WeddingPlanner.png";
 
 function App() {
   return (
@@ -134,6 +135,37 @@ function App() {
               </a>
               <a
                 href="https://github.com/UgniusDak/2048"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="project-section">
+        <h2 className="section-title">Full - stack projects</h2>
+        <div className="project-grid">
+          <div className="project-card">
+            <img
+              src={weddingImage}
+              alt="CSS-HTML Project"
+              className="project-image"
+            />
+            <h3 className="project-title">Wedding planner project</h3>
+            <div className="project-links">
+              <a
+                href="https://wed-planner-front-end.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/weddingPlanner"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"
