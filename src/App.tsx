@@ -5,6 +5,7 @@ import reactionGameImage from "./Images/ReactionGame.png";
 import guessWordImage from "./Images/GuessWord.png";
 import gameImage from "./Images/2048.png";
 import weddingImage from "./Images/WeddingPlanner.png";
+import justWatchImage from "./Images/JustWatch.png";
 
 function App() {
   return (
@@ -166,6 +167,32 @@ function App() {
               </a>
               <a
                 href="https://github.com/UgniusDak/weddingPlanner"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+          <div className="project-card">
+            <img
+              src={justWatchImage}
+              alt="CSS-HTML Project"
+              className="project-image"
+            />
+            <h3 className="project-title">JustWatch project</h3>
+            <div className="project-links">
+              <a
+                href="https://just-watch-front-end.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Web Page
+              </a>
+              <a
+                href="https://github.com/UgniusDak/justWatch/tree/main"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"
